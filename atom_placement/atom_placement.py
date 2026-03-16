@@ -17,16 +17,32 @@ class AtomPlacement:
     # Returns the neighbor states of the given state as a list of AtomPlacementState
     def neighbors(self, state: AtomPlacementState) -> list[AtomPlacementState]:
 
-        # TODO
+        neighbors = []
+        arr = state.sites_assignment
+        n = len(arr)
 
-        return []
+        for i in range(n):
+            for j in range(i + 1, n):
+
+                if arr[i] != arr[j]:
+
+                    new_assignment = arr.copy()
+                    new_assignment[i], new_assignment[j] = new_assignment[j], new_assignment[i]
+
+                    neighbors.append(AtomPlacementState(new_assignment))
+
+        return neighbors
 
     # Returns the objective value of the given state
     def value(self, state: AtomPlacementState) -> int:
+        res = 0
 
-        # TODO
+        for edge in self.edges:
+            i = state.sites_assignment[edge[0]]
+            j = state.sites_assignment[edge[1]]
+            res += self.energy_matrix[i][j]
 
-        return 0
+        return res
 
     def __init__(self, filename: str):
         file = open(filename)
@@ -51,4 +67,10 @@ class AtomPlacement:
             self.edges.append([int(val) for val in file.readline().split(' ')])
 
 
+if __name__ == "__main__":
+    a = AtomPlacement("instances/i01.txt")
+    s = a.init_state()
+    n = a.neighbors(s)
 
+    v = [a.value(st) for st in n]
+    print(v)

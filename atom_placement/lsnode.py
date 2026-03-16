@@ -23,6 +23,6 @@ class LSNode:
         """Yields nodes reachable from this node. [Fig. 3.8]"""
         # end = []
         for neighbor in self.problem.neighbors(self.state):
-            # end.append(LSNode(self.problem, next, self.step + 1))
+            # end.append(LSNode(self.problem, next, self.step + 1))init_state
             yield LSNode(self.problem, neighbor, self.step + 1)
         # return end
