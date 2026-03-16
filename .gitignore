@@ -1,4 +1,4 @@
 *.log
-.xml
+*.xml
 .vscode
 assignment1.pdf

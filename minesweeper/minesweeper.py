@@ -6,6 +6,8 @@ from pycsp3 import *
 def solve_minesweeper(clues: list[list[int]]) -> list[(int, int)]:
     clear()
 
+    agent = VarArray(size=[len(clues), len(clues[0])], dom=range(-1, 9))
+
     # TODO
 
     return None
