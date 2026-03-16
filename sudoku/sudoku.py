@@ -7,21 +7,29 @@ def solve_sudoku(clues):
     x = VarArray(size=[9, 9], dom=range(1, 10))
 
     satisfy(
-    # constraint 1
+    # constraint 1 -> tous les nombres de la même ligne doivent être différents
     [AllDifferent(x[i]) for i in range(9)],
 
-    # constraint 2
+    # constraint 2 -> tous les nombres de la même colonne doivent être différents
     [AllDifferent(x[:, j]) for j in range(9)],
 
-    # constraint 3
+    # constraint 3 -> tous les nombres dans les carrés doivent être différents
     [AllDifferent(x[i:i + 3, j:j + 3]) for i in [0, 3, 6] for j in [0, 3, 6]],
 
-    # constraint 4
+    # constraint 4 -> toutes les cases déjà remplies du tableau
     [x[i][j] == clues[i][j] for i in range(9) for j in range(9) if clues and clues[i][j] > 0],
 
     # ADD YOUR SUPPLEMENTARY CONSTRAINT HERE
-    
+    [AllDifferent([x[i][j] for i in [1,4,7] for j in [1,4,7]])]
     )
+    """
+    On aurait pu écrire quelque chose du genre : 
+    contraintes = []
+    for i in range (9):
+        contraintes.append(AllDifferent(x[i]))
+    etc.
+    et puis : satisfy(contraintes)
+    """
 
     # Solve the problem and print the solution if found
     if solve(solver=CHOCO) is SAT:
