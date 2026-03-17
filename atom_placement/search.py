@@ -7,8 +7,7 @@ from atom_placement import AtomPlacement
 
 def random_walk(problem, limit=100) -> LSNode:
     """
-    Perform a local search by selecting at each iteration the best neighbor of the current state.
-    Returns a LSNode corresponding to the best found solution
+    Perform a random walk in the search space and returns a LSNode corresponding to the best found solution.
     """
 
 
