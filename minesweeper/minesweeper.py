@@ -56,7 +56,9 @@ def voisinsValides(i: int, j: int, n: int, m: int):
     voisins = []
     for a in [-1,0,1]:
         for b in [-1,0,1]:
-            if (((a,b)!=(0,0)) and (i+a>=0) and (i+a <n) and (j+b>=0) and (j+b <m)):
+            if (((a,b)!=(0,0)) 
+                and (i+a>=0) and (i+a <n) 
+                and (j+b>=0) and (j+b <m)):
                 voisins.append((i+a,j+b))
     return voisins
 
