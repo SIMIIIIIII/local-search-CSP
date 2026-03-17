@@ -1,55 +1,53 @@
 | Instance | Strategy | Time (s) | Best Value | Steps | std Value |
 |----------|----------|----------|------------|-------|------------------|
-| instances/i01.txt | random_walk | 0.0120 | 219.10 | 38.90 | 8.67 |
-| instances/i01.txt | max_value | 0.2588 | 427.00 | 12.00 | 0.00 |
-| instances/i01.txt | randomized_max_value | 0.1574 | 416.10 | 42.70 | 8.57 |
-| instances/i02.txt | random_walk | 0.0742 | 1690.10 | 51.40 | 48.79 |
-| instances/i02.txt | max_value | 5.5938 | 2427.00 | 25.00 | 0.00 |
-| instances/i02.txt | randomized_max_value | 5.9075 | 2455.00 | 64.60 | 10.50 |
-| instances/i03.txt | random_walk | 0.0745 | 1794.10 | 66.30 | 82.17 |
-| instances/i03.txt | max_value | 6.4109 | 2758.00 | 19.00 | 0.00 |
-| instances/i03.txt | randomized_max_value | 6.7608 | 2818.30 | 66.20 | 24.00 |
-| instances/i04.txt | random_walk | 0.0360 | 587.80 | 59.40 | 23.24 |
-| instances/i04.txt | max_value | 3.5590 | 1103.00 | 9.00 | 0.00 |
-| instances/i04.txt | randomized_max_value | 3.6604 | 1113.00 | 31.30 | 2.58 |
-| instances/i05.txt | random_walk | 0.0087 | 368.30 | 58.40 | 8.33 |
-| instances/i05.txt | max_value | 0.1638 | 586.00 | 8.00 | 0.00 |
-| instances/i05.txt | randomized_max_value | 0.1406 | 573.20 | 37.60 | 12.18 |
-| instances/i06.txt | random_walk | 0.0087 | 340.70 | 46.60 | 12.98 |
-| instances/i06.txt | max_value | 0.1675 | 522.00 | 11.00 | 0.00 |
-| instances/i06.txt | randomized_max_value | 0.1638 | 520.90 | 47.60 | 5.84 |
-| instances/i07.txt | random_walk | 0.0198 | 412.90 | 43.10 | 25.67 |
-| instances/i07.txt | max_value | 0.8686 | 788.00 | 16.00 | 0.00 |
-| instances/i07.txt | randomized_max_value | 0.9056 | 795.50 | 51.60 | 13.19 |
-| instances/i08.txt | random_walk | 0.0336 | 844.80 | 47.90 | 28.44 |
-| instances/i08.txt | max_value | 2.8344 | 1381.00 | 18.00 | 0.00 |
-| instances/i08.txt | randomized_max_value | 2.8447 | 1425.80 | 72.20 | 18.70 |
-| instances/i09.txt | random_walk | 0.0200 | 668.70 | 28.10 | 25.91 |
-| instances/i09.txt | max_value | 0.8358 | 1175.00 | 17.00 | 0.00 |
-| instances/i09.txt | randomized_max_value | 0.9915 | 1219.00 | 69.10 | 9.61 |
-| instances/i10.txt | random_walk | 0.0323 | 2382.50 | 57.80 | 51.65 |
-| instances/i10.txt | max_value | 2.5959 | 3068.00 | 22.00 | 0.00 |
-| instances/i10.txt | randomized_max_value | 2.3091 | 3063.50 | 59.60 | 8.15 |
+| instances/i01.txt | random_walk | 0.0184 | 222.70 | 38.00 | 12.92 |
+| instances/i01.txt | max_value | 0.2354 | 151.00 | 6.00 | 0.00 |
+| instances/i01.txt | randomized_max_value | 0.1595 | 136.30 | 36.00 | 6.65 |
+| instances/i02.txt | random_walk | 0.0699 | 1673.10 | 69.90 | 35.09 |
+| instances/i02.txt | max_value | 5.8656 | 1281.00 | 18.00 | 0.00 |
+| instances/i02.txt | randomized_max_value | 6.6795 | 1252.80 | 43.80 | 9.53 |
+| instances/i03.txt | random_walk | 0.0797 | 1797.30 | 74.80 | 65.82 |
+| instances/i03.txt | max_value | 7.1235 | 1128.00 | 23.00 | 0.00 |
+| instances/i03.txt | randomized_max_value | 7.1470 | 1116.80 | 74.60 | 16.84 |
+| instances/i04.txt | random_walk | 0.0405 | 570.50 | 54.30 | 22.21 |
+| instances/i04.txt | max_value | 4.2226 | 274.00 | 13.00 | 0.00 |
+| instances/i04.txt | randomized_max_value | 4.0372 | 240.30 | 56.20 | 23.98 |
+| instances/i05.txt | random_walk | 0.0074 | 361.60 | 38.70 | 12.58 |
+| instances/i05.txt | max_value | 0.1363 | 304.00 | 5.00 | 0.00 |
+| instances/i05.txt | randomized_max_value | 0.1651 | 297.80 | 48.60 | 4.96 |
+| instances/i06.txt | random_walk | 0.0081 | 339.60 | 55.30 | 12.42 |
+| instances/i06.txt | max_value | 0.1791 | 269.00 | 8.00 | 0.00 |
+| instances/i06.txt | randomized_max_value | 0.1843 | 271.00 | 62.10 | 7.16 |
+| instances/i07.txt | random_walk | 0.0201 | 403.70 | 58.50 | 22.85 |
+| instances/i07.txt | max_value | 0.9377 | 244.00 | 15.00 | 0.00 |
+| instances/i07.txt | randomized_max_value | 0.9949 | 224.80 | 67.80 | 3.77 |
+| instances/i08.txt | random_walk | 0.0407 | 838.80 | 56.60 | 28.36 |
+| instances/i08.txt | max_value | 3.1851 | 465.00 | 21.00 | 0.00 |
+| instances/i08.txt | randomized_max_value | 3.4857 | 463.80 | 65.60 | 5.83 |
+| instances/i09.txt | random_walk | 0.0226 | 677.30 | 30.60 | 23.92 |
+| instances/i09.txt | max_value | 1.1658 | 481.00 | 8.00 | 0.00 |
+| instances/i09.txt | randomized_max_value | 1.0323 | 418.60 | 58.80 | 15.23 |
+| instances/i10.txt | random_walk | 0.0437 | 2369.70 | 45.70 | 43.65 |
+| instances/i10.txt | max_value | 3.0434 | 1994.00 | 17.00 | 0.00 |
+| instances/i10.txt | randomized_max_value | 2.8405 | 1991.80 | 75.40 | 11.17 |
 
  Summary by Strategy 
 
  --------------------
 Strategy: random_walk
-  Mean Best Value: 930.90 (Stddev: 749.99)
-  Mean Time: 0.0320 s
-  Mean Steps to Best: 49.79
+  Mean Best Value: 925.43 (Stddev: 747.39)
+  Mean Time: 0.0351 s
+  Mean Steps to Best: 52.24
 Strategy: max_value
-  Mean Best Value: 1423.50 (Stddev: 975.79)
-  Mean Time: 2.3289 s
-  Mean Steps to Best: 15.70
+  Mean Best Value: 659.10 (Stddev: 606.91)
+  Mean Time: 2.6094 s
+  Mean Steps to Best: 13.40
 Strategy: randomized_max_value
-  Mean Best Value: 1440.03 (Stddev: 987.79)
-  Mean Time: 2.3841 s
-  Mean Steps to Best: 54.25
+  Mean Best Value: 641.40 (Stddev: 610.05)
+  Mean Time: 2.6726 s
+  Mean Steps to Best: 58.89
 
  Best  strategy with minmum mean best value: randomized_max_value
-
-
 
 
 
